@@ -17,4 +17,4 @@ This project is a deep learning web application built using **Streamlit** and **
 
 ## ⚙️ How to Run the App Locally
 1. Clone this repository:
- 
+ https://github.com/NebrasJafail/Emotion-Recognition.git
