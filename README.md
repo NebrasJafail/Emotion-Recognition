@@ -1,4 +1,3 @@
-# Emotion-Recognition
 # Facial Emotion Recognition App 
 
 This project is a deep learning web application built using **Streamlit** and **TensorFlow/Keras** to detect and classify facial expressions from images into 7 distinct emotion categories.
@@ -18,3 +17,6 @@ This project is a deep learning web application built using **Streamlit** and **
 ## ⚙️ How to Run the App Locally
 1. Clone this repository:
  https://github.com/NebrasJafail/Emotion-Recognition.git
+
+## 💻 Streamlit App Link
+* http://localhost:8501/
