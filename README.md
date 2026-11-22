@@ -1,22 +1,29 @@
-# Facial Emotion Recognition App 
+# Facial Emotion Recognition
 
-This project is a deep learning web application built using **Streamlit** and **TensorFlow/Keras** to detect and classify facial expressions from images into 7 distinct emotion categories.
+Nebras Jafail - GA DSB-3
 
-## 🚀 Project Overview
-* **Model Architecture:** Convolutional Neural Network (CNN) trained on the **FER-2013** dataset.
-* **Categories (7 Emotions):** Angry, Disgust, Fear, Happy, Neutral, Sad, Surprise.
-* **Web Interface:** Developed using **Streamlit** for real-time image upload and interactive prediction.
+Predicts the emotion of a face image (angry, disgust, fear, happy, neutral, sad, surprise) using the FER2013 dataset, with a Streamlit app that uses the webcam.
 
-## 🛠️ Tech Stack & Libraries
-* **Python**
-* **TensorFlow / Keras** (Model training & loading)
-* **Streamlit** (Web application framework)
-* **OpenCV & NumPy** (Image processing & array manipulation)
-* **Pillow (PIL)** (Image handling)
+## How to run
+1. Download FER2013 from Kaggle and put the `train` and `test` folders next to the notebook.
+2. `pip install -r requirements.txt`
+3. Run `facial_emotion_recognition.ipynb` (it saves `emotion_cnn.keras`).
+4. `streamlit run app.py`
 
-## ⚙️ How to Run the App Locally
-1. Clone this repository:
- https://github.com/NebrasJafail/Emotion-Recognition.git
+## Results
+| Model | Test accuracy |
+|---|---|
+| Dense (first version) | 36% |
+| Dense (fixed) | ... |
+| CNN + EarlyStopping | ... |
 
-## 💻 Streamlit App Link
-* http://localhost:8501/
+## Mistakes I fixed
+- I used the test data as validation, so now I use `validation_split=0.2`
+- I loaded gray images as rgb, so now I use `grayscale`
+- I trained the same model twice, so now each model is trained once
+- I added precision/recall, the loss plot and a CNN
+
+## Limitations
+- Weak with bad lighting, side faces or covered faces
+- disgust has very few images
+- The dataset may not represent everyone equally
