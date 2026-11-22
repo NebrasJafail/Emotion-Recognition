@@ -1,6 +1,6 @@
 # Facial Emotion Recognition
 
-Nebras Jafail - GA DSB-3
+Nebras Jafail 
 
 Predicts the emotion of a face image (angry, disgust, fear, happy, neutral, sad, surprise) using the FER2013 dataset, with a Streamlit app that uses the webcam.
 
@@ -27,6 +27,7 @@ The fixed Dense score is lower because my first score used the test data during 
 - I added precision/recall, the loss plot and a CNN
 
 ## App
+- The link: https://the-emotion-recognition.streamlit.app/
 - Upload a photo or use the webcam
 - The app finds the face, makes it gray and 48x48, then predicts the emotion
 
